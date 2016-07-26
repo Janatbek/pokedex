@@ -5,6 +5,7 @@
 	<title>Pokemons</title>
 </head>
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	
 	<script type="text/javascript">
 		$(document).ready(function()
 		{
@@ -14,7 +15,6 @@
 				output += "<img id='" + i + "' src='http://pokeapi.co/media/img/" + i + ".png'>";
 			}	
 			$('#pokemon').html(output);
-
 			$(document).on("click", "img", function()
 			{
 				var num = $(this).attr("id");
@@ -30,18 +30,12 @@
 					description += "<h2>" + data.name + "</h2>" + "<img src='http://pokeapi.co/media/img/" + num + ".png'>" + "<h3>Types</h3><ul>" + types + "</ul><h3>Height</h3><p>" + data.height + "</p><h3>Weight</h3><p>" + data.weight + "</p>"
 				
 					$('#info').html(description);
-				},"json");
-				
+				},"json");	
 			})
-
 		});
 
 	</script>
-	<style type="text/css">
-		
-
-	</style>
-
+	<link rel="stylesheet" href="style.css">
 <body>
 	<div id="pokemon"></div>
 	<div id="info"></div>
