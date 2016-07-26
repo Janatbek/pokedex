@@ -1,0 +1,18 @@
+*{
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+#pokemon{
+	width: 700px;
+	display: inline-block;
+}
+#info{
+	border: 5px solid red;
+	width: 300px;
+	display: inline-block;
+	padding: 30px;
+}
+h2, h3, ul li, p{
+	margin-bottom: 15px;
+}
